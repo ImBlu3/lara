@@ -20,7 +20,7 @@
 #import "persistence.h"
 #import "ota.h"
 #import "screentime.h"
-#include "kexploit/pe/shell.h"
+#include "pe/shell.h"
 
 #import <zlib.h>
 
